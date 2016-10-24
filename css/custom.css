@@ -57,11 +57,9 @@
   width: 100%;
   overflow: hidden;
   border: 1px solid black;
-  border-radius: 100%;
 }
 
 .portfolio-box .portfolio-box-caption {
-  border-radius: 100%;
   color: white;
   opacity: 0;
   display: block;
