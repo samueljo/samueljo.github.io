@@ -163,6 +163,10 @@
   opacity: 0.8;
 }
 
+.gif {
+  width: 75%;
+}
+
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-desc {
     font-size: 16px;
