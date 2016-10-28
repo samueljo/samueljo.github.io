@@ -6544,6 +6544,7 @@ button.close {
 }
 .hidden {
   display: none !important;
+  transition: all 1s;
 }
 .affix {
   position: fixed;

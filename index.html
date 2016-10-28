@@ -10,7 +10,7 @@
 
     <title>Samuel Jo</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
@@ -99,83 +99,106 @@
             </div>
         </div>
     </section>
-
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-          <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-              <h2>Portfolio</h2>
-              <hr class="small">
-              <div class="row">
-              <div class="portfolio-col">
-                <br><br>
-                <div class="portfolio-item">
-                  <div class="portfolio-box">
-                    <img src="img/netclips.png" class="portfolio-img img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                      <div class="portfolio-box-caption-content">
-                        <div class="project-name text-faded">
-                            Netclips
-                        </div>
-                        <br>
-                        <div class="project-desc">
-                          Online video streaming web application with Netflix-inspired UX. Back end built on Rails and a PostgreSQL database. Frontend created with React, JavaScript, and Redux.
-                        </div>
-                        <a href="http://www.netclips.xyz/" class="project-button">Live</a>
-                        <a href="https://github.com/samueljo/Netclips" class="project-button">GitHub</a>
-                      </div>
-                    </div>
+
+    <div class="content">
+      <h2 class="portfolio-header">Portfolio</h2>
+      <div class="projects">
+          <h1>Projects</h1>
+          <ul class="list group">
+            <li data-key="netclips" class="list-selected">
+              <h3>Netclips</h3>
+              <p>
+                Online video streaming web application with Netflix-inspired UX.
+              </p>
+            </li>
+            <li data-key="falcon">
+              <h3>Mini-lennium Falcon</h3>
+              <p>
+                Browser game based off of Flappy Bird and Star Wars.
+              </p>
+            </li>
+            <li data-key="joquery">
+              <h3>joQuery</h3>
+              <p>
+                A light-weight DOM manipulation library with Snake demonstration.
+              </p>
+            </li>
+          </ul>
+
+          <ul class="project-content">
+            <li data-key="netclips" class="project-item">
+              <div class="info">
+                <div class="project-item-header">
+                  <h3>Netclips</h3>
+                  <div class="sources">
+                    <a target="_blank" href="https://github.com/samueljo/Netclips">github</a>
+                    <a id="Netclips" target="_blank" href="http://www.netclips.xyz/">live</a>
                   </div>
                 </div>
+                <span>Back end built on Rails and a PostgreSQL database. Frontend created with React, JavaScript, and Redux.</span>
+                <ul>
+                  <li>Real-time suggestions unique for each user using Rail's native ORM framework, ActiveRecord</li>
+                  <li>Minimized AJAX requests and number of database queries using React and ActiveRecord</li>
+                  <li>Designed responsive carousel rows with React components to track which series a user is inspecting</li>
+                </ul>
+                <hr>
+                <div class='img-container'>
+                  <img src="img/netclips.png" class="portfolio-img img-responsive" alt="">
+                  <img src="img/netclips2.png" class="portfolio-img img-responsive" alt="">
+                  <img src="img/netclips3.png" class="portfolio-img img-responsive" alt="">
+                </div>
               </div>
-              <div class="portfolio-col">
-                <br><br>
-                <div class="portfolio-box">
+            </li>
+            <li data-key="falcon" class="project-item hidden">
+              <div class="info">
+                <div class="project-item-header">
+                  <h3>Mini-lennium Falcon</h3>
+                  <div class="sources">
+                    <a target="_blank" href="https://github.com/samueljo/Mini-lenniumFalcon">github</a>
+                    <a id="Falcon" target="_blank" href="http://www.samueljo.com/Mini-lenniumFalcon/">live</a>
+                  </div>
+                </div>
+                <span>Addictive JavaScript based browser game inspired by Flappy Bird and Star Wars</span>
+                <ul>
+                  <li>Used HTML5 Canvas for rendering and collision detection</li>
+                  <li>Utilized own DOM manipulation library, joQuery, to create all event handlers and manipulate joQuery objects and DOM elements</li>
+                </ul>
+                <hr>
+                <div class='img-container'>
                   <img src="img/mini-falcon.png" class="portfolio-img img-responsive" alt="">
-                  <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                      <div class="project-name text-faded">
-                          Mini-lennium Falcon
-                      </div>
-                      <br>
-                      <div class="project-desc">
-                        JavaScript based browser game created with canvas for 2D rendering and own library, joQuery, for DOM manipulation.
-                        <br><br>
-                        Star Wars X Helicopter
-                      </div>
-                      <a href="http://www.samueljo.com/Mini-lenniumFalcon/" class="project-button">Live</a>
-                      <a href="https://github.com/samueljo/Mini-lenniumFalcon" class="project-button">GitHub</a>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="portfolio-col">
-                <br><br>
-                <div class="portfolio-box">
+            </li>
+            <li data-key="joquery" class="project-item hidden">
+              <div class="info">
+                <div class="project-item-header">
+                  <h3>joQuery</h3>
+                  <div class="sources">
+                    <a target="_blank" href="https://github.com/samueljo/joQuery">github</a>
+                    <a id="joQuery" target="_blank" href="http://www.samueljo.com/joQuery/">demo</a>
+                  </div>
+                </div>
+                <span>
+                  Implemented using the native DOM API to ensure cross-browser compatibility
+                  <br>
+                  Features include:
+                </span>
+                <ul>
+                  <li>Core DOM manipulation functionality</li>
+                  <li>AJAX requests</li>
+                  <li>Event handling</li>
+                </ul>
+                <hr>
+                <div class='img-container'>
                   <img src="img/joquery.png" class="portfolio-img img-responsive" alt="">
-                  <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                      <div class="project-name text-faded">
-                          joQuery
-                      </div>
-                      <br>
-                      <div class="project-desc">
-                        A light-weight library to manage core DOM manipulation functionality, making AJAX requests, and event handling. Implemented using the native DOM API to ensure cross-browser compatibility.
-                        <br><br>
-                        (with Snake demonstration)
-                      </div>
-                      <a href="https://github.com/samueljo/joQuery" class="project-button">GitHub</a>
-                      <a href="http://www.samueljo.com/joQuery/" class="project-button">Snake Demo</a>
-                    </div>
-                  </div>
+                  <img src="img/snake.png" class="portfolio-img img-responsive" alt="">
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
 
     <!-- Skills -->
     <section id="skills" class="skills bg-primary">
@@ -280,7 +303,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    <script src="js/site.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
