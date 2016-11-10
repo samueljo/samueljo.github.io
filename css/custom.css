@@ -40,10 +40,6 @@
 
 /* Portfolio */
 
-#portfolio {
-  max-height: 900px;
-}
-
 .portfolio-header {
   font-size: 2.5em;
   text-align: center;
@@ -64,8 +60,6 @@
 .list {
   padding: 0;
   display: inline-block;
-  width: 25%;
-  max-width: 400px;
 }
 
 .list h3 {
@@ -105,6 +99,7 @@
   margin-left: -5px;
   padding-left: 30px;
   width: calc(70% - 60px);
+  min-width: 280px;
   vertical-align: top;
   margin-top: -5px;
   list-style: square inside;
