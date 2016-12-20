@@ -163,6 +163,16 @@
   opacity: 0.8;
 }
 
+@media (max-width: 1021px) {
+  .list {
+    width: 100%;
+  }
+
+  .project-content {
+    width: 100%;
+  }
+}*/
+
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-desc {
     font-size: 16px;
